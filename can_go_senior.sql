@@ -28,7 +28,7 @@ go
 insert into tmpCircuitJudges
 select firstname, lastname, dateofbirth, appointeddate, datediff(day, dateofbirth, getdate()) as "Age",
 	datediff(day, appointeddate, getdate()) as "DaysofService", null, null, null, null from person 
-where (persontype = 'cj') and (circuitcode = '09CR')
+where (persontype = 'CJ') and (circuitcode = '09CR')
 
 /* Calculate date can go Senior providing they are 65 and have 10 years of service. */
 update tmpCircuitJudges
