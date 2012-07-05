@@ -1,10 +1,9 @@
-/*  cr_spGetPeople.sql 							*/
+/*  cr_spGetPeople.sql 						*/
 /* This sql script creates a stored procedure which is called from an	*/
 /* ASP.NET web form. The user specifies search criteria including the	*/
 /* possible selection of multiple court districts from a drop-down box.	*/
 /* The results returned by the stored procedure are used to populate	*/
-/* a results section on the web form.
-/*
+/* a results section on the web form.				*/
 
 drop procedure spGetPeople
 go
@@ -91,3 +90,4 @@ exec spGetPeople '', '', '', '', 'FLETCHER', 'C'
 
 
 */
+
